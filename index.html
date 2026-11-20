@@ -1,322 +1,690 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Keralam Coffee | Fresh Coffee & Good Vibes</title>
+    <!-- PRIMARY SEO -->
+    <title>Coffee Keralam | Fresh Coffee, Cafe & Online Orders</title>
 
-    <meta name="description" content="Experience the finest coffee at Keralam Coffee. Freshly brewed coffee, delicious snacks and a cosy atmosphere.">
+    <meta name="description"
+    content="Explore Coffee Keralam for freshly brewed coffee, espresso, cappuccino and more. Discover our menu, cafe experience and easy WhatsApp ordering in Kerala.">
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Coffee Keralam">
+    <meta name="theme-color" content="#351719">
 
-    <!-- Google Fonts -->
+    <!-- GEO / LANGUAGE -->
+    <meta name="language" content="English">
+    <meta name="geo.region" content="IN-KL">
+    <meta name="content-language" content="en-IN">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Coffee Keralam | Fresh Coffee, Cafe & Online Orders">
+    <meta property="og:description" content="Explore Coffee Keralam for freshly brewed coffee, espresso, cappuccino and more. Discover our menu, cafe experience and easy WhatsApp ordering in Kerala.">
+    <meta property="og:site_name" content="Coffee Keralam">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200">
+
+    <!-- TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Coffee Keralam | Fresh Coffee, Cafe & Online Orders">
+    <meta name="twitter:description" content="Discover freshly brewed coffee, espresso, cappuccino and more at Coffee Keralam.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1200">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/svgs/solid/mug-hot.svg" type="image/svg+xml">
+
+    <!-- PERFORMANCE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
 
+    <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
+    <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- COFFEE SHOP STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Coffee Keralam",
+      "description": "Coffee Keralam is a Kerala-inspired coffee shop website featuring coffee varieties, menu information and online ordering.",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Kerala, India"
+      },
+      "servesCuisine": ["Coffee", "Cafe"],
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Coffee Keralam Menu",
+        "hasMenuSection": {
+          "@type": "MenuSection",
+          "name": "Coffee",
+          "hasMenuItem": [
+            {
+              "@type": "MenuItem",
+              "name": "Cappuccino",
+              "offers": {
+                "@type": "Offer",
+                "price": "150",
+                "priceCurrency": "INR"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cold Coffee",
+              "offers": {
+                "@type": "Offer",
+                "price": "180",
+                "priceCurrency": "INR"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Espresso",
+              "offers": {
+                "@type": "Offer",
+                "price": "120",
+                "priceCurrency": "INR"
+              }
+            },
+            {
+              "@type": "MenuItem",
+              "name": "Cafe Latte",
+              "offers": {
+                "@type": "Offer",
+                "price": "170",
+                "priceCurrency": "INR"
+              }
+            }
+          ]
+        }
+      }
+    }
+    </script>
+
+    <!-- WEBSITE STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Coffee Keralam",
+      "description": "Explore coffee varieties, menu information and coffee experiences inspired by Kerala."
+    }
+    </script>
+
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <nav class="navbar container">
-
-            <a href="#home" class="nav-logo">
-                <h2><i class="fa-solid fa-mug-hot"></i> Keralam Coffee</h2>
-            </a>
-
-            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#menu" class="nav-link">Menu</a></li>
-                <li><a href="#gallery" class="nav-link">Gallery</a></li>
-                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-
-    <main>
-
-        <!-- Hero Section -->
-        <section class="hero-section" id="home">
-
-            <div class="hero-content container">
-
-                <div class="hero-details">
-
-                    <h2 class="subtitle">Best Coffee Experience</h2>
-
-                    <h1>Start Your Day With A Perfect Cup Of Coffee</h1>
-
-                    <p>
-                        Welcome to Keralam Coffee! Enjoy freshly brewed coffee,
-                        delicious flavours and unforgettable moments.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#menu" class="button order-button">Order Now</a>
-                        <a href="#contact" class="button contact-button">Contact Us</a>
-                    </div>
-
-                </div>
-
-                <div class="hero-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=900"
-                        alt="Freshly brewed coffee with coffee beans">
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- About Section -->
-        <section class="about-section section-padding" id="about">
-
-            <div class="container about-container">
-
-                <div class="about-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900"
-                        alt="Beautiful coffee shop interior">
-                </div>
-
-                <div class="about-content">
-
-                    <h2 class="section-title">About Us</h2>
-
-                    <h3>More Than Just Coffee</h3>
-
-                    <p>
-                        At Keralam Coffee, we believe every cup tells a story.
-                        We bring together quality coffee beans, expert brewing
-                        and a warm atmosphere to create the perfect coffee experience.
-                    </p>
-
-                    <p>
-                        Whether you need a morning boost or a relaxing evening,
-                        we are here to make every moment special.
-                    </p>
-
-                    <div class="social-icons">
-                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Menu Section -->
-        <section class="menu-section section-padding" id="menu">
-
-            <div class="container">
-
-                <h2 class="section-title">Our Special Menu</h2>
-
-                <p class="section-description">
-                    Discover your favourite coffee and delicious treats.
-                </p>
-
-                <div class="menu-grid">
-
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600" alt="Hot cappuccino">
-                        <h3>Cappuccino</h3>
-                        <p>Rich espresso with creamy steamed milk and foam.</p>
-                        <span>₹150</span>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600" alt="Cold iced coffee">
-                        <h3>Cold Coffee</h3>
-                        <p>Refreshing chilled coffee with a smooth flavour.</p>
-                        <span>₹180</span>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600" alt="Espresso coffee">
-                        <h3>Espresso</h3>
-                        <p>A bold and rich coffee for true coffee lovers.</p>
-                        <span>₹120</span>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600" alt="Latte coffee">
-                        <h3>Cafe Latte</h3>
-                        <p>Smooth espresso combined with steamed milk.</p>
-                        <span>₹170</span>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="Mocha coffee">
-                        <h3>Mocha</h3>
-                        <p>A delicious combination of chocolate and coffee.</p>
-                        <span>₹190</span>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600" alt="Coffee and cafe treats">
-                        <h3>Special Coffee</h3>
-                        <p>Our signature coffee made with selected beans.</p>
-                        <span>₹200</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Gallery Section -->
-        <section class="gallery-section section-padding" id="gallery">
-
-            <div class="container">
-
-                <h2 class="section-title">Our Coffee Gallery</h2>
-
-                <p class="section-description">
-                    A glimpse of our coffee moments.
-                </p>
-
-                <div class="gallery-grid">
-
-                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700" alt="Coffee cup">
-                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=700" alt="Coffee shop">
-                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=700" alt="Coffee latte">
-                    <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=700" alt="Coffee brewing">
-                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700" alt="Cafe interior">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700" alt="Fresh coffee">
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Testimonials -->
-        <section class="testimonial-section section-padding" id="testimonials">
-
-            <div class="container">
-
-                <h2 class="section-title">What Our Customers Say</h2>
-
-                <div class="testimonial-grid">
-
-                    <div class="testimonial-card">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p>"Amazing coffee and a beautiful atmosphere. Highly recommended!"</p>
-                        <h3>Arjun</h3>
-                        <span>★★★★★</span>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p>"The cappuccino was excellent. A perfect place to relax."</p>
-                        <h3>Meera</h3>
-                        <span>★★★★★</span>
-                    </div>
-
-                    <div class="testimonial-card">
-                        <i class="fa-solid fa-quote-left"></i>
-                        <p>"Friendly service, great taste and wonderful coffee."</p>
-                        <h3>Rahul</h3>
-                        <span>★★★★★</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Contact Section -->
-        <section class="contact-section section-padding" id="contact">
-
-            <div class="container">
-
-                <h2 class="section-title">Contact Us</h2>
-
-                <div class="contact-container">
-
-                    <div class="contact-info">
-
-                        <h3>Let's Have A Coffee!</h3>
-
-                        <p><i class="fa-solid fa-location-dot"></i> Kerala, India</p>
-
-                        <p><i class="fa-solid fa-envelope"></i> hello@keralamcoffee.com</p>
-
-                        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
-
-                        <p><i class="fa-solid fa-clock"></i> Monday - Sunday: 9 AM - 10 PM</p>
-
-                    </div>
-
-                    <form class="contact-form" id="contactForm">
-
-                        <input type="text" placeholder="Your Name" required>
-
-                        <input type="email" placeholder="Your Email" required>
-
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-
-                        <button type="submit" class="button order-button">
-                            Send Message
-                        </button>
-
-                    </form>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="container footer-content">
-
-            <h2><i class="fa-solid fa-mug-hot"></i> Keralam Coffee</h2>
-
-            <p>Fresh Coffee. Beautiful Moments.</p>
-
-            <p class="copyright">
-                © 2026 Keralam Coffee. All Rights Reserved.
+<!-- HEADER -->
+<header class="header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+        <a href="#home" class="logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            Coffee Keralam
+        </a>
+
+        <button class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Coffee Menu</a></li>
+            <li><a href="#benefits">Why Coffee</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="#cart" class="cart-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart <span id="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">Discover the joy of coffee</span>
+
+            <h1>Freshly Brewed Coffee for Every Coffee Lover</h1>
+
+            <p>
+                Explore Coffee Keralam, your destination for rich coffee
+                flavours, aromatic espresso and delicious cappuccino.
+                Discover our coffee menu and enjoy a coffee-inspired
+                experience rooted in Kerala.
             </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Coffee Menu</a>
+                <a href="#about" class="btn btn-outline">Discover Our Story</a>
+            </div>
+
+            <div class="hero-highlights">
+                <span><i class="fa-solid fa-mug-hot"></i> Coffee Varieties</span>
+                <span><i class="fa-solid fa-heart"></i> Made for Coffee Lovers</span>
+            </div>
 
         </div>
 
-    </footer>
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=900"
+                alt="Fresh coffee beans and freshly brewed coffee at Coffee Keralam"
+                fetchpriority="high">
+        </div>
+
+    </div>
+</section>
 
 
-    <script src="script.js"></script>
+<!-- ABOUT SECTION -->
+<section class="about section-padding" id="about">
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800"
+                alt="Warm and welcoming coffee shop interior">
+        </div>
+
+        <div class="about-content">
+
+            <span class="eyebrow">Our Coffee Story</span>
+
+            <h2>About Coffee Keralam</h2>
+
+            <p>
+                Coffee Keralam is a coffee-inspired brand that celebrates
+                the joy of enjoying a quality cup of coffee. Our website
+                brings together coffee varieties, menu information and
+                an easy way to explore your favourite drinks.
+            </p>
+
+            <p>
+                Inspired by Kerala's love for coffee, we focus on
+                sharing coffee knowledge, flavours and a welcoming
+                cafe experience for coffee enthusiasts.
+            </p>
+
+            <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- MENU SECTION -->
+<section class="menu-section section-padding" id="menu">
+
+    <div class="container">
+
+        <span class="eyebrow center">Explore Our Selection</span>
+
+        <h2 class="section-title">Popular Coffee Menu in Kerala</h2>
+
+        <p class="section-intro">
+            Discover popular coffee drinks, from rich espresso to
+            creamy cappuccino and refreshing cold coffee.
+        </p>
+
+        <div class="product-grid">
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600"
+                    alt="Cappuccino coffee with creamy milk foam"
+                    loading="lazy">
+
+                <div class="product-info">
+                    <h3>Cappuccino</h3>
+                    <p>
+                        A classic coffee drink made with espresso,
+                        steamed milk and a layer of milk foam.
+                    </p>
+                    <span class="price">₹150</span>
+                    <button class="add-to-cart"
+                            data-name="Cappuccino"
+                            data-price="150">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600"
+                    alt="Refreshing iced cold coffee"
+                    loading="lazy">
+
+                <div class="product-info">
+                    <h3>Cold Coffee</h3>
+                    <p>
+                        A chilled coffee drink with a smooth,
+                        refreshing flavour.
+                    </p>
+                    <span class="price">₹180</span>
+                    <button class="add-to-cart"
+                            data-name="Cold Coffee"
+                            data-price="180">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600"
+                    alt="Freshly prepared espresso coffee"
+                    loading="lazy">
+
+                <div class="product-info">
+                    <h3>Espresso</h3>
+                    <p>
+                        A concentrated coffee with a bold aroma
+                        and rich flavour.
+                    </p>
+                    <span class="price">₹120</span>
+                    <button class="add-to-cart"
+                            data-name="Espresso"
+                            data-price="120">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=600"
+                    alt="Cafe latte with smooth milk foam"
+                    loading="lazy">
+
+                <div class="product-info">
+                    <h3>Cafe Latte</h3>
+                    <p>
+                        Espresso combined with steamed milk
+                        for a smooth and balanced taste.
+                    </p>
+                    <span class="price">₹170</span>
+                    <button class="add-to-cart"
+                            data-name="Cafe Latte"
+                            data-price="170">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600"
+                    alt="Mocha coffee with chocolate flavour"
+                    loading="lazy">
+
+                <div class="product-info">
+                    <h3>Mocha</h3>
+                    <p>
+                        A delicious coffee combination with
+                        espresso, chocolate and milk.
+                    </p>
+                    <span class="price">₹190</span>
+                    <button class="add-to-cart"
+                            data-name="Mocha"
+                            data-price="190">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600"
+                    alt="Special freshly brewed coffee"
+                    loading="lazy">
+
+                <div class="product-info">
+                    <h3>Special Coffee</h3>
+                    <p>
+                        A signature-style coffee selection
+                        for people who enjoy exploring flavours.
+                    </p>
+                    <span class="price">₹200</span>
+                    <button class="add-to-cart"
+                            data-name="Special Coffee"
+                            data-price="200">
+                        Add to Cart
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- WHY COFFEE SECTION -->
+<section class="benefits section-padding" id="benefits">
+
+    <div class="container">
+
+        <span class="eyebrow center">Coffee Knowledge</span>
+
+        <h2 class="section-title">Why Do People Love Coffee?</h2>
+
+        <p class="section-intro">
+            Coffee is enjoyed around the world for its aroma,
+            taste, variety and place in everyday routines.
+        </p>
+
+        <div class="benefit-grid">
+
+            <article class="benefit-card">
+                <i class="fa-solid fa-mug-hot"></i>
+                <h3>Rich Aroma</h3>
+                <p>
+                    Coffee is known for its distinctive aroma
+                    and wide range of flavour profiles.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Coffee Beans</h3>
+                <p>
+                    Coffee beans, including Arabica and Robusta,
+                    contribute different characteristics to coffee.
+                </p>
+            </article>
+
+            <article class="benefit-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Social Experience</h3>
+                <p>
+                    Coffee shops offer welcoming spaces for
+                    conversations, meetings and relaxation.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- KERALA COFFEE SECTION -->
+<section class="kerala-section section-padding">
+
+    <div class="container kerala-content">
+
+        <div>
+            <span class="eyebrow">Inspired by Kerala</span>
+
+            <h2>Discover Coffee Culture in Kerala</h2>
+
+            <p>
+                Kerala has a rich connection with coffee cultivation
+                and coffee culture. The state's landscapes and
+                agricultural traditions make coffee an interesting
+                part of its food and beverage story.
+            </p>
+
+            <p>
+                Coffee Keralam brings this inspiration into a
+                digital coffee experience, helping visitors explore
+                coffee varieties and popular cafe drinks.
+            </p>
+
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800"
+            alt="Coffee cafe atmosphere inspired by Kerala"
+            loading="lazy">
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="gallery-section section-padding" id="gallery">
+
+    <div class="container">
+
+        <span class="eyebrow center">Coffee Moments</span>
+
+        <h2 class="section-title">Coffee Keralam Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700"
+                 alt="Fresh coffee served in a cup" loading="lazy">
+
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=700"
+                 alt="Coffee latte art" loading="lazy">
+
+            <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=700"
+                 alt="Coffee preparation" loading="lazy">
+
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700"
+                 alt="Modern coffee shop interior" loading="lazy">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FAQ SECTION - AEO -->
+<section class="faq-section section-padding" id="faq">
+
+    <div class="container faq-container">
+
+        <span class="eyebrow center">Frequently Asked Questions</span>
+
+        <h2 class="section-title">Coffee Keralam FAQs</h2>
+
+        <p class="section-intro">
+            Find clear answers to common questions about coffee,
+            coffee varieties and our menu.
+        </p>
+
+        <article class="faq-item">
+            <h3>What is Coffee Keralam?</h3>
+            <p>
+                Coffee Keralam is a Kerala-inspired coffee brand
+                website featuring coffee varieties, menu information,
+                coffee knowledge and online ordering features.
+            </p>
+        </article>
+
+        <article class="faq-item">
+            <h3>What types of coffee are available?</h3>
+            <p>
+                Our sample menu features cappuccino, cold coffee,
+                espresso, cafe latte, mocha and special coffee.
+            </p>
+        </article>
+
+        <article class="faq-item">
+            <h3>What is the difference between espresso and cappuccino?</h3>
+            <p>
+                Espresso is a concentrated coffee brewed under pressure.
+                Cappuccino combines espresso with steamed milk and milk foam.
+            </p>
+        </article>
+
+        <article class="faq-item">
+            <h3>Does Coffee Keralam offer online ordering?</h3>
+            <p>
+                This website includes a sample shopping cart and
+                WhatsApp ordering interface. Actual ordering is
+                subject to the business's operating arrangements.
+            </p>
+        </article>
+
+        <article class="faq-item">
+            <h3>Where is Coffee Keralam based?</h3>
+            <p>
+                Coffee Keralam is a Kerala-inspired digital coffee
+                project. Add the verified business address and
+                service locations here if this website represents
+                a real operating cafe.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- SHOPPING CART -->
+<section class="cart-section section-padding" id="cart">
+
+    <div class="container">
+
+        <h2 class="section-title">Your Shopping Cart</h2>
+
+        <div class="cart-container">
+
+            <div id="cart-items" aria-live="polite">
+                <p class="empty-cart">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+                <h3>Total: ₹<span id="cart-total">0.00</span></h3>
+
+                <button id="checkout-btn" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Order on WhatsApp
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+
+    <div class="container">
+
+        <span class="eyebrow center">Contact Information</span>
+
+        <h2 class="section-title">Contact Coffee Keralam</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-details">
+
+                <h3>Let's Talk About Coffee</h3>
+
+                <p>
+                    Have a question about our coffee menu or website?
+                    Send us a message.
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Kerala, India
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@coffeekeralam.com
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Send Message
+                </button>
+
+                <p id="form-status" aria-live="polite"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container">
+
+        <a href="#home" class="footer-logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            Coffee Keralam
+        </a>
+
+        <p>Fresh Coffee. Beautiful Moments.</p>
+
+        <p class="footer-description">
+            Discover coffee varieties, coffee knowledge and
+            a Kerala-inspired cafe experience.
+        </p>
+
+        <p class="copyright">
+            © <span id="current-year"></span> Coffee Keralam.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="script.js" defer></script>
 
 </body>
 </html>
